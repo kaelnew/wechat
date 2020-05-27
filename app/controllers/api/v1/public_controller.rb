@@ -1,4 +1,4 @@
-class Api::V1::PublicController < ApplicationController
+class Api::V1::PublicController < Api::V1::ApplicationController
   def signature
     Rails.logger.info("params: #{params}")
     a = [params[:signature].to_s, params[:timestamp].to_s, params[:nonce].to_s]
