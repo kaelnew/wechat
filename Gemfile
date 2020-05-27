@@ -36,9 +36,8 @@ group :development, :test do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
-  gem 'capistrano-rbenv'
-  # Add this if you're using rvm
-  # gem 'capistrano-rvm'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rvm'
 end
 
 group :development do
