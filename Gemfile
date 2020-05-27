@@ -33,6 +33,12 @@ gem "rails-settings-cached", "~> 2.0"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  # Add this if you're using rvm
+  # gem 'capistrano-rvm'
 end
 
 group :development do
