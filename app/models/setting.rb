@@ -21,4 +21,8 @@ class Setting < RailsSettings::Base
     code: 2, 
     msg: 'server exception'
   }
+
+  field :access_token_url, default: 'https://api.weixin.qq.com/cgi-bin/token?'
+  field :grant_type, default: 'client_credential'
+  field :create_menu_url, default: 'https://api.weixin.qq.com/cgi-bin/menu/create?'
 end
